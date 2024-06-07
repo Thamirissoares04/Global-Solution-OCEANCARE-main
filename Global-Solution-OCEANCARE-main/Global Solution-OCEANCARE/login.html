@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login OceanCare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ocean.png" type="image/x-icon">
+</head>
+<body>
+    
+<div class="container">
+    <img src="ocean.png" alt="Logo">
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<!-- Intruções Para login
+
+Usuario: oceancare@gs.com
+Senha: coral1234 -->
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('#loginForm'); // Corrigido para loginForm
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const username = document.querySelector('#username').value;
+                const password = document.querySelector('#password').value;
+
+                if (username === 'oceancare@gs.com' && password === 'coral1234') {
+                    alert('Login bem-sucedido!');
+                    window.location.href = 'index.html'; 
+                } else {
+                    alert('Usuário ou senha incorretos. Tente novamente.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

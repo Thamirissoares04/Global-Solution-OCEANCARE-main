@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanCare</title>
+    <link href="https://fonts.googleapis.com/css2?family=NomeDaFonte&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="shortcut icon" href="ocean.png" type="favicon">
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+
+<body>
+    <header>
+        <img src="ocean.png" alt="Logo da OceanCare">
+        <nav>
+            <ul>
+                <li><a href="#Problema">Problema</a></li>
+                <li><a href="#Tecnologia">Tecnologia</a></li>
+                <li><a href="#Objetivos">Objetivos</a></li>
+                <li><a href="#Público">Público</a></li>
+                <li><a href="#Benefícios">Benefícios</a></li>
+                <li><a href="#Como Ajudar">Como Ajudar</a></li>
+            </ul>
+        </nav>
+        <a class="login-link" href="login.html">LOGIN</a>
+    
+    </header>
+
+    <div class="carousel">
+        <div><img src="1.png" alt="Banner 1"></div>
+        <div><img src="2.png" alt="Banner 2"></div>
+    </div>
+
+    <main>
+        <section id="Problema">
+            <h2>Branqueamento dos Corais</h2>
+            <p>O branqueamento dos corais é causado pelo aumento da temperatura e acidificação da água, prejudicando os
+                ecossistemas marinhos.</p>
+            <p>Esses fatores ameaçam a biodiversidade dos recifes, comprometendo a vida marinha que depende desses
+                ecossistemas para sobreviver.</p>
+            <img src="branqueamento 2.png" alt="explicação sobre o branqueamento dos corais">
+        </section>
+
+        <section id="Tecnologia">
+            <h2>Tecnologia de Monitoramento Ambiental:</h2>
+            <p>Nosso projeto visa utilizar sensores Arduino para medir temperatura e pH da água, detectando alterações
+                prejudiciais aos corais.</p>
+            <p>Esses sensores alertarão sobre condições adversas, permitindo uma resposta rápida para mitigar os impactos
+                negativos nos corais.</p>
+            <img src="tecno.png" alt="imagem de um projeto de Arduino que mostra temperatura">
+        </section>
+
+        <section id="Objetivos">
+            <h2>Metodologia de Investigação e Avanços Tecnológicos</h2>
+            <p>Queremos entender as causas do branqueamento dos corais, fornecendo dados precisos para pesquisas
+                científicas.</p>
+            <p>Também buscamos desenvolver soluções para proteger os recifes e preservar sua biodiversidade e funcionalidade
+                ecológica.</p>
+            <img src="cien.png" alt="Imagem de pesquisador marinho">
+
+        </section>
+
+        <section id="Público">
+            <h2>Envolvimento da Comunidade e Parcerias Estratégicas</h2>
+            <p>Pesquisadores e biólogos marinhos, juntamente com organizações ambientais, serão essenciais na coleta e análise
+                desses dados.</p>
+            <p>Por meio de parcerias estratégicas, eles poderão desenvolver e implementar medidas de conservação mais eficazes
+                para proteger os corais.</p>
+            <img src="bio.png" alt="Imagem de pesquisador marinho">
+        </section>
+
+        <section id="Benefícios">
+            <h2>Resultados Esperados e Vantagens da Solução Proposta</h2>
+            <p>A solução viabilizará monitoramento constante das condições marinhas, minimizando danos potenciais aos corais e
+                ecossistemas marinhos.</p>
+            <p>Isso será fundamental para a preservação da biodiversidade, mantendo os recifes de corais saudáveis e resilientes.
+            </p>
+            <img src="prot.png" alt="Imagem da biodiversidade marinha">
+        </section>
+
+        <section id="Como Ajuda">
+            <h2>Implementação Prática</h2>
+            <p>A solução simplificará a coleta precisa de dados, beneficiando pesquisadores e conservacionistas na proteção dos
+                corais.</p>
+            <p>Facilitará intervenções rápidas, aprimorando a gestão eficaz e conservação dos recifes de corais de forma eficiente.
+            </p>
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>OceanCare - Global Solution &copy; 2024</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+        $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+         });
+        });
+
+    </script>
+
+</body>
+
+</html>
